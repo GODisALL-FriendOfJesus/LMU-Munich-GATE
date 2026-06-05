@@ -6,69 +6,66 @@
     <title>LMU Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-[#f3f3f3] font-sans antialiased text-black">
 
-<body class="bg-[#f3f3f3] font-sans antialiased">
-
-<header class="fixed top-0 left-0 w-full bg-white z-50 border-b border-gray-100">
-    <div class="max-w-[1440px] mx-auto h-20 md:h-24 flex justify-between items-center px-6 md:px-12 relative">
+<header class="fixed top-0 left-0 w-full bg-white z-50 h-20 border-b border-gray-100">
+    <div class="max-w-[1440px] mx-auto h-full flex justify-between items-center px-6 md:px-12 relative">
         
-        <a href="#" class="flex flex-row items-stretch select-none z-50">
-            <div class="bg-[#008A47] text-white px-4 py-3 md:px-5 md:py-4 flex items-center">
-                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-none">LMU</h1>
+        <div class="absolute left-6 md:left-12 top-0 flex items-stretch z-50 h-20">
+            <div class="bg-[#008A47] text-white px-4 flex items-center">
+                <h1 class="text-3xl font-extrabold tracking-tight">LMU</h1>
             </div>
-            <div class="bg-[#008A47] text-white border-l border-white/30 px-3 py-3 md:px-4 md:py-4 flex items-center">
-                <p class="text-[9px] md:text-[11px] font-bold uppercase tracking-wider leading-tight">
+            <div class="bg-[#008A47] text-white border-l border-white/30 px-3 flex items-center">
+                <p class="text-[10px] font-bold uppercase tracking-wider leading-tight">
                     Ludwig-<br>Maximilians-<br>Universität<br>München
                 </p>
             </div>
-        </a>
+        </div>
 
-        <div class="flex items-center gap-6 md:gap-8">
-            <button class="p-2 hover:opacity-60 transition duration-200">
-                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <div class="ml-auto flex items-center gap-6 md:gap-8">
+            <button class="p-2 hover:opacity-60 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
-
             <button class="flex flex-col gap-1.5 p-2 group">
-                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
-                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
-                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
+                <span class="w-7 h-[2px] bg-black transition group-hover:bg-[#008A47]"></span>
+                <span class="w-7 h-[2px] bg-black transition group-hover:bg-[#008A47]"></span>
+                <span class="w-7 h-[2px] bg-black transition group-hover:bg-[#008A47]"></span>
             </button>
         </div>
 
     </div>
 </header>
 
-<div class="h-20 md:h-24"></div>
+<div class="h-20"></div>
 
 <main class="w-full bg-white">
     <div class="max-w-[1440px] mx-auto px-6 md:px-12 pt-6">
         
         <div class="grid grid-cols-1 md:grid-cols-3 border-t border-l border-gray-200">
             
-            <div class="md:col-span-2 relative h-[350px] md:h-[400px] bg-gray-300 overflow-hidden border-r border-b border-gray-200">
-                <img src="image/bg-image.jpg" alt="Hero background" class="absolute inset-0 w-full h-full object-cover">
+            <div class="md:col-span-2  h-[400px] bg-gray-300 overflow-hidden border-r border-b border-gray-200">
+                <img src="image/bg-image.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/10"></div>
             </div>
 
-            <div class="md:row-span-2 bg-white p-8 md:p-10 flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition-all duration-300 hover:z-10 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01]">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-6 tracking-tight transition-colors duration-300 group-hover:text-[#008A47]">
+            <div class="md:row-span-2 bg-white relative  p-8 md:p-10 flex flex-col mt-20 justify-between border-r border-b border-gray-200 cursor-pointer group transition duration-300 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01] hover:z-10">
+                <div class="md:mt-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight transition-colors group-hover:text-[#008A47]">
                         The rhythm of life
                     </h2>
-                    <p class="text-gray-700 text-base md:text-lg leading-relaxed transition-colors duration-300 group-hover:text-black">
+                    <p class="text-gray-700 text-base md:text-lg leading-relaxed">
                         How regular repetition structures humans, society, and natural processes. The new issue of our digital magazine "LMU Research and Innovation" is online!
                     </p>
                 </div>
-                
                 <div class="mt-12 pt-6 border-t border-gray-100 flex items-center justify-between">
-                    <span class="text-sm font-semibold tracking-wide text-gray-400 group-hover:text-[#008A47] transition-colors duration-300">Discover More</span>
-                    <div class="text-3xl text-[#008A47] transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                    <span class="text-sm font-semibold tracking-wide text-gray-400 group-hover:text-[#008A47] transition-colors">Discover More</span>
+                    <div class="text-3xl text-[#008A47] transform transition-transform group-hover:translate-x-2">→</div>
                 </div>
             </div>
 
-            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:scale-[1.01]">
+            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition duration-300 hover:scale-[1.01] hover:z-10">
                 <div>
                     <div class="w-14 h-14 border border-white/40 flex items-center justify-center mb-10 text-[11px] font-bold tracking-widest leading-none text-center">
                         NE<br>WS
@@ -77,10 +74,10 @@
                         Signals from the deep: brain rhythms distinguish states of consciousness
                     </h3>
                 </div>
-                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                <div class="text-3xl transform transition-transform group-hover:translate-x-2">→</div>
             </div>
 
-            <div class="bg-white text-black p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01]">
+            <div class="bg-white text-black p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition duration-300 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01] hover:z-10">
                 <div>
                     <div class="w-14 h-14 border border-black flex flex-col items-center justify-center mb-10 text-center">
                         <span class="text-xl font-extrabold leading-none">10</span>
@@ -90,12 +87,12 @@
                         Franz Schubert’s “Fair Maid of the Mill” and it’s background in Berlin
                     </h3>
                 </div>
-                <div class="text-3xl text-black group-hover:text-[#008A47] transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                <div class="text-3xl group-hover:text-[#008A47] transform transition-transform group-hover:translate-x-2">→</div>
             </div>
 
             <div class="hidden md:block bg-[#f3f3f3] border-r border-b border-gray-200"></div>
 
-            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:scale-[1.01]">
+            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition duration-300 hover:scale-[1.01] hover:z-10">
                 <div>
                     <div class="w-14 h-14 border border-white/40 flex items-center justify-center mb-10 text-[11px] font-bold tracking-widest leading-none text-center">
                         NE<br>WS
@@ -104,14 +101,14 @@
                         Munich Climate School: Tackling the climate crisis through an interdisciplinary approach
                     </h3>
                 </div>
-                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                <div class="text-3xl transform transition-transform group-hover:translate-x-2">→</div>
             </div>
 
-            <div class="bg-[#008A47] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:bg-green-800 hover:scale-[1.01]">
+            <div class="bg-[#008A47] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition duration-300 hover:bg-green-800 hover:scale-[1.01] hover:z-10">
                 <h3 class="text-2xl font-extrabold tracking-tight mt-14">
                     To the Newsroom
                 </h3>
-                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                <div class="text-3xl transform transition-transform group-hover:translate-x-2">→</div>
             </div>
 
         </div>
