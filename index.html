@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,76 +9,116 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="scroll-smooth bg-white">
+<body class="overflow-x-hidden">
 
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-[1600px] mx-auto flex items-center justify-between px-4 md:px-8 py-4">
+    <header class="absolute top-0 left-0 w-full bg-white z-40 shadow-sm">
 
-            <div class="flex cursor-pointer transition duration-300 hover:scale-105">
+        <div class="h-20 md:h-24 flex justify-end items-center px-6 md:px-12 gap-8">
 
-                <div class="bg-green-700 text-white px-4 py-3 md:px-6 md:py-4">
-                    <h1 class="text-4xl md:text-6xl font-bold leading-none">
-                        LMU
-                    </h1>
-                </div>
+            <button class="hover:opacity-80 transition duration-300">
+                <img
+                    src="image/search.png"
+                    alt="search"
+                    class="w-6 md:w-7"
+                >
+            </button>
 
-                <div class="bg-green-700 text-white px-3 py-3 md:px-5 md:py-4 border-l border-white">
-                    <p class="text-[10px] md:text-base font-semibold uppercase leading-tight">
-                        Ludwig-<br>
-                        Maximilians-<br>
-                        Universität<br>
-                        München
-                    </p>
-                </div>
+            <button class="group">
 
-            </div>
+    <span
+        class="block w-8 h-[2px] bg-black mb-2 transition duration-300 group-hover:w-10">
+    </span>
 
-            <div class="flex items-center gap-8">
+    <span
+        class="block w-8 h-[2px] bg-black mb-2 transition duration-300 group-hover:w-6">
+    </span>
 
-                <button class="text-2xl md:text-3xl transition duration-300 hover:text-green-700 hover:scale-110">
-                    🔍
-                </button>
+    <span
+        class="block w-8 h-[2px] bg-black transition duration-300 group-hover:w-10">
+    </span>
 
-                <button class="group">
-                    <span class="block w-8 h-1 bg-black mb-1 transition duration-300 group-hover:bg-green-700"></span>
-                    <span class="block w-8 h-1 bg-black mb-1 transition duration-300 group-hover:bg-green-700"></span>
-                    <span class="block w-8 h-1 bg-black transition duration-300 group-hover:bg-green-700"></span>
-                </button>
+</button>
 
-            </div>
+            </button>
 
         </div>
+
     </header>
+
+    <div
+        class="absolute top-4 left-4 md:left-12 z-50 flex transition duration-300 hover:shadow-2xl">
+
+        <div
+            class="bg-green-700 text-white
+                   px-4 py-4
+                   sm:px-5 sm:py-5
+                   md:px-6 md:py-7">
+
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none">
+                LMU
+            </h1>
+
+        </div>
+
+        <div
+            class="bg-green-700 text-white
+                   border-l border-white
+                   px-3 py-4
+                   sm:px-4 sm:py-5
+                   md:px-5 md:py-7">
+
+            <p
+                class="text-[9px] sm:text-[10px] md:text-base font-semibold uppercase leading-tight">
+                Ludwig-<br>
+                Maximilians-<br>
+                Universität<br>
+                München
+            </p>
+
+        </div>
+
+    </div>
 
     <section class="relative min-h-screen overflow-hidden">
 
         <img
-            src="part1.PNG"
-            alt="Image1"
-            class="absolute inset-0 w-full h-full object-cover transition duration-700 hover:scale-105"
+            src="image/bg-image.jpg"
+            alt="background"
+            class="absolute inset-0 w-full h-full object-cover"
         >
 
         <div class="absolute inset-0 bg-black/10"></div>
 
-        <div class="absolute bottom-0 right-0 w-full md:w-[700px] lg:w-[800px]">
+        <div
+            class="absolute bottom-0 right-0
+                   w-full
+                   md:w-[720px]
+                   lg:w-[850px]">
 
-            <div class="bg-white/95 backdrop-blur-sm shadow-2xl p-8 md:p-12 lg:p-14">
+            <div
+                class="bg-white/95
+                       backdrop-blur-sm
+                       p-8 md:p-12 lg:p-14
+                       shadow-2xl
+                       transition duration-300
+                       hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
 
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                <h2
+                    class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
                     The rhythm of life
                 </h2>
 
-                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p
+                    class="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
                     How regular repetition structures humans, society,
                     and natural processes. The new issue of our digital
-                    magazine explores how rhythm influences daily life,
-                    science, and culture.
+                    magazine explores the rhythm behind everyday life.
                 </p>
 
                 <a
                     href="#"
-                    class="inline-block mt-8 bg-green-700 text-white px-6 py-3 font-semibold transition duration-300 hover:bg-green-800 hover:-translate-y-1 hover:shadow-lg"
-                >
+                    class="inline-block mt-8 bg-green-700 text-white px-6 py-3 font-semibold transition duration-300 hover:bg-green-800">
                     Read More
                 </a>
 
@@ -89,3 +130,4 @@
 
 </body>
 </html>
+```
