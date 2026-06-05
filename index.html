@@ -3,31 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LMU </title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lmuGreen: '#008542',
+                        lmuDarkGrey: '#222222',
+                        lmuLightGrey: '#F3F4F6'
+                    }
+                }
+            }
+        }
+    </script>
+     
+    
+    </style>
 </head>
-<body class="bg-white text-gray-100 font-sans ">
-    <header class="bg-white sticky top-0 z-50 border-b border-gray-100" >
-        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-            <div class="bg-[#008542] text-white font-serif font-extrabold text-2xl px-3 py-2 tracking-tight">
-                LMU
-            </div>
-            <div class="border-l border-gray-300 pl-3 hidden sm:block text-[10px] font-bold text-gray-500 tracking-widest leading-none">
-                LUDWIG_<br>MAXIMILIANS-<br>UNIVERSITAT<br>MUNCHEN
+<body class="bg-gray-50 min-h-screen font-sans antialiased text-gray-900 flex flex-col justify-between">
 
+
+    <header class="w-full bg-white border-b border-gray-200 h-20 relative z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto h-full flex items-center justify-between px-4 sm:px-6 lg:px-8">
+            
+            
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-black tracking-tight text-lmuDarkGrey">
+                    LMU<span class="text-lmuGreen">.</span>
+                </a>
+                <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600">
+                    <a href="#" class="hover:text-lmuGreen transition-colors">Study</a>
+                    <a href="#" class="hover:text-lmuGreen transition-colors">Research</a>
+                    <a href="#" class="hover:text-lmuGreen transition-colors">About Us</a>
+                </nav>
             </div>
 
-            <div class="flex items-center space-x-6">
-                <button class="text-gray-900 hover:text-[#008542] transition-colors" arial-label="Search">
-                    
+             
+            <div class="flex items-start h-full space-x-2 relative">
+                
+                 
+                <button class="boundary-breaker bg-lmuDarkGrey text-white px-6 h-24 flex flex-col justify-center shadow-lg border-b-4 border-transparent hover:border-lmuGreen group cursor-pointer rounded-b-sm">
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Portal</span>
+                    <span class="text-sm font-extrabold flex items-center gap-2 mt-0.5 whitespace-nowrap">
+                        Students <span class="group-hover:translate-x-1 transition-transform text-lmuGreen">&rarr;</span>
+                    </span>
+                </button>
+
+                <!-- Box 2: Staff Remote Access -->
+                <button class="boundary-breaker bg-lmuLightGrey text-lmuDarkGrey px-6 h-24 flex flex-col justify-center shadow-lg border-b-4 border-transparent hover:border-lmuGreen group cursor-pointer rounded-b-sm">
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Access</span>
+                    <span class="text-sm font-extrabold flex items-center gap-2 mt-0.5 whitespace-nowrap">
+                        Staff <span class="group-hover:translate-x-1 transition-transform text-lmuGreen">&rarr;</span>
+                    </span>
                 </button>
 
             </div>
         </div>
-        </div>
-
     </header>
-    
+
+     
+
+    <!-- 3. FOOTER -->
+    <footer class="w-full bg-lmuDarkGrey text-gray-400 text-xs py-8 border-t border-gray-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>&copy; 2026 Ludwig-Maximilians-Universität München. All rights reserved.</div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition-colors">Imprint</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
