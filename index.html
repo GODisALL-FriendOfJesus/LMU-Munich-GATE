@@ -11,39 +11,40 @@
 
 <body class="overflow-x-hidden">
 
-    <header class="absolute top-0 left-0 w-full bg-white z-40 shadow-sm">
+<header class="absolute top-0 left-0 w-full bg-white z-40 shadow-sm">
 
-        <div class="h-20 md:h-24 flex justify-end items-center px-6 md:px-12 gap-8">
+    <div class="h-20 md:h-24 flex justify-end items-center px-6 md:px-12 gap-8">
 
-            <button class="hover:opacity-80 transition duration-300">
-                <img
-                    src="image/search.png"
-                    alt="search"
-                    class="w-6 md:w-7"
-                >
-            </button>
+        <button class="group">
 
-            <button class="group">
+            <img
+                src="image/search.jpg"
+                alt="search"
+                class="w-6 md:w-7 transition duration-300 group-hover:opacity-70"
+            >
 
-    <span
-        class="block w-8 h-[2px] bg-black mb-2 transition duration-300 group-hover:w-10">
-    </span>
+        </button>
 
-    <span
-        class="block w-8 h-[2px] bg-black mb-2 transition duration-300 group-hover:w-6">
-    </span>
+        <button class="group">
 
-    <span
-        class="block w-8 h-[2px] bg-black transition duration-300 group-hover:w-10">
-    </span>
+            <span
+                class="hidden sm:block w-8 h-[2px] bg-black mb-2 transition-colors duration-300 group-hover:bg-green-700">
+            </span>
 
-</button>
+            <span
+                class="hidden sm:block w-8 h-[2px] bg-black mb-2 transition-colors duration-300 group-hover:bg-green-700">
+            </span>
 
-            </button>
+            <span
+                class="hidden sm:block w-8 h-[2px] bg-black transition-colors duration-300 group-hover:bg-green-700">
+            </span>
 
-        </div>
+        </button>
 
-    </header>
+    </div>
+
+</header>
+
 
     <div
         class="absolute top-4 left-4 md:left-12 z-50 flex transition duration-300 hover:shadow-2xl">
@@ -127,6 +128,133 @@
         </div>
 
     </section>
+```html
+<section class="bg-[#f3f3f3]">
+
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3">
+
+        <div
+            class="bg-[#1f1f1f] text-white p-8 min-h-[290px] flex flex-col justify-between">
+
+            <div>
+
+                <div
+                    class="w-16 h-16 border border-white flex items-center justify-center mb-8">
+                    <span class="font-bold text-xl leading-none">
+                        NE<br>WS
+                    </span>
+                </div>
+
+                <h3 class="text-2xl font-semibold leading-relaxed">
+                    Signals from the deep: brain rhythms distinguish
+                    states of consciousness
+                </h3>
+
+            </div>
+
+            <span class="text-4xl">→</span>
+
+        </div>
+
+        <div
+            class="bg-white
+                   p-8
+                   min-h-[290px]
+                   border border-transparent
+                   transition-all
+                   duration-300
+                   hover:border-green-700
+                   hover:text-green-700
+                   hover:scale-105
+                   cursor-pointer">
+
+            <div
+                class="w-16 h-16 border border-black flex flex-col items-center justify-center mb-8">
+
+                <span class="font-bold text-2xl">10</span>
+                <span class="font-bold">JUN</span>
+
+            </div>
+
+            <h3 class="text-2xl font-semibold leading-relaxed">
+                Franz Schubert’s “Fair Maid of the Mill”
+                and it’s background in Berlin
+            </h3>
+
+            <div class="mt-8 text-4xl">
+                →
+            </div>
+
+        </div>
+
+        <div
+            class="bg-[#f3f3f3]
+                   p-8
+                   min-h-[290px]
+                   flex items-center">
+
+            <span
+                class="text-4xl text-green-700">
+                →
+            </span>
+
+        </div>
+
+        <div></div>
+
+        <div
+            class="bg-[#1f1f1f]
+                   text-white
+                   p-8
+                   min-h-[280px]
+                   flex flex-col justify-between">
+
+            <div>
+
+                <div
+                    class="w-16 h-16 border border-white flex items-center justify-center mb-8">
+
+                    <span class="font-bold text-xl leading-none">
+                        NE<br>WS
+                    </span>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold leading-relaxed">
+                    Munich Climate School:
+                    Tackling the climate crisis through
+                    an interdisciplinary approach
+                </h3>
+
+            </div>
+
+            <span class="text-4xl">→</span>
+
+        </div>
+
+        <div
+            class="bg-green-700
+                   text-white
+                   p-8
+                   min-h-[280px]
+                   flex flex-col justify-between
+                   transition-all
+                   duration-300
+                   hover:bg-green-800">
+
+            <h3 class="text-2xl font-bold">
+                To the Newsroom
+            </h3>
+
+            <span class="text-4xl">
+                →
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 </html>
