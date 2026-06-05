@@ -1,261 +1,123 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LMU Clone</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="bg-[#f3f3f3] font-sans antialiased">
 
-<header class="absolute top-0 left-0 w-full bg-white z-40 shadow-sm">
+<header class="fixed top-0 left-0 w-full bg-white z-50 border-b border-gray-100">
+    <div class="max-w-[1440px] mx-auto h-20 md:h-24 flex justify-between items-center px-6 md:px-12 relative">
+        
+        <a href="#" class="flex flex-row items-stretch select-none z-50">
+            <div class="bg-[#008A47] text-white px-4 py-3 md:px-5 md:py-4 flex items-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-none">LMU</h1>
+            </div>
+            <div class="bg-[#008A47] text-white border-l border-white/30 px-3 py-3 md:px-4 md:py-4 flex items-center">
+                <p class="text-[9px] md:text-[11px] font-bold uppercase tracking-wider leading-tight">
+                    Ludwig-<br>Maximilians-<br>Universität<br>München
+                </p>
+            </div>
+        </a>
 
-    <div class="h-20 md:h-24 flex justify-end items-center px-6 md:px-12 gap-8">
+        <div class="flex items-center gap-6 md:gap-8">
+            <button class="p-2 hover:opacity-60 transition duration-200">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
 
-        <button class="group">
-
-            <img
-                src="image/search.jpg"
-                alt="search"
-                class="w-6 md:w-7 transition duration-300 group-hover:opacity-70"
-            >
-
-        </button>
-
-        <button class="group">
-
-            <span
-                class="hidden sm:block w-8 h-[2px] bg-black mb-2 transition-colors duration-300 group-hover:bg-green-700">
-            </span>
-
-            <span
-                class="hidden sm:block w-8 h-[2px] bg-black mb-2 transition-colors duration-300 group-hover:bg-green-700">
-            </span>
-
-            <span
-                class="hidden sm:block w-8 h-[2px] bg-black transition-colors duration-300 group-hover:bg-green-700">
-            </span>
-
-        </button>
+            <button class="flex flex-col gap-1.5 p-2 group">
+                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
+                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
+                <span class="w-7 h-[2px] bg-black transition-transform duration-300 group-hover:bg-[#008A47]"></span>
+            </button>
+        </div>
 
     </div>
-
 </header>
 
+<div class="h-20 md:h-24"></div>
 
-    <div
-        class="absolute top-4 left-4 md:left-12 z-50 flex transition duration-300 hover:shadow-2xl">
+<main class="w-full bg-white">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 pt-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 border-t border-l border-gray-200">
+            
+            <div class="md:col-span-2 relative h-[350px] md:h-[400px] bg-gray-300 overflow-hidden border-r border-b border-gray-200">
+                <img src="image/bg-image.jpg" alt="Hero background" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/10"></div>
+            </div>
 
-        <div
-            class="bg-green-700 text-white
-                   px-4 py-4
-                   sm:px-5 sm:py-5
-                   md:px-6 md:py-7">
+            <div class="md:row-span-2 bg-white p-8 md:p-10 flex flex-col justify-between border-r border-b border-gray-200 cursor-pointer group transition-all duration-300 hover:z-10 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01]">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-6 tracking-tight transition-colors duration-300 group-hover:text-[#008A47]">
+                        The rhythm of life
+                    </h2>
+                    <p class="text-gray-700 text-base md:text-lg leading-relaxed transition-colors duration-300 group-hover:text-black">
+                        How regular repetition structures humans, society, and natural processes. The new issue of our digital magazine "LMU Research and Innovation" is online!
+                    </p>
+                </div>
+                
+                <div class="mt-12 pt-6 border-t border-gray-100 flex items-center justify-between">
+                    <span class="text-sm font-semibold tracking-wide text-gray-400 group-hover:text-[#008A47] transition-colors duration-300">Discover More</span>
+                    <div class="text-3xl text-[#008A47] transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+                </div>
+            </div>
 
-            <h1
-                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none">
-                LMU
-            </h1>
+            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:scale-[1.01]">
+                <div>
+                    <div class="w-14 h-14 border border-white/40 flex items-center justify-center mb-10 text-[11px] font-bold tracking-widest leading-none text-center">
+                        NE<br>WS
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight leading-snug group-hover:underline">
+                        Signals from the deep: brain rhythms distinguish states of consciousness
+                    </h3>
+                </div>
+                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+            </div>
 
-        </div>
+            <div class="bg-white text-black p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:outline hover:outline-2 hover:outline-[#008A47] hover:scale-[1.01]">
+                <div>
+                    <div class="w-14 h-14 border border-black flex flex-col items-center justify-center mb-10 text-center">
+                        <span class="text-xl font-extrabold leading-none">10</span>
+                        <span class="text-[10px] font-bold tracking-wider">JUN</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight leading-snug group-hover:text-[#008A47]">
+                        Franz Schubert’s “Fair Maid of the Mill” and it’s background in Berlin
+                    </h3>
+                </div>
+                <div class="text-3xl text-black group-hover:text-[#008A47] transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+            </div>
 
-        <div
-            class="bg-green-700 text-white
-                   border-l border-white
-                   px-3 py-4
-                   sm:px-4 sm:py-5
-                   md:px-5 md:py-7">
+            <div class="hidden md:block bg-[#f3f3f3] border-r border-b border-gray-200"></div>
 
-            <p
-                class="text-[9px] sm:text-[10px] md:text-base font-semibold uppercase leading-tight">
-                Ludwig-<br>
-                Maximilians-<br>
-                Universität<br>
-                München
-            </p>
+            <div class="bg-[#1a1a1a] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:z-10 hover:scale-[1.01]">
+                <div>
+                    <div class="w-14 h-14 border border-white/40 flex items-center justify-center mb-10 text-[11px] font-bold tracking-widest leading-none text-center">
+                        NE<br>WS
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight leading-snug group-hover:underline">
+                        Munich Climate School: Tackling the climate crisis through an interdisciplinary approach
+                    </h3>
+                </div>
+                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+            </div>
+
+            <div class="bg-[#008A47] text-white p-8 min-h-[320px] flex flex-col justify-between border-r border-b border-gray-200 group cursor-pointer transition-all duration-300 hover:bg-green-800 hover:scale-[1.01]">
+                <h3 class="text-2xl font-extrabold tracking-tight mt-14">
+                    To the Newsroom
+                </h3>
+                <div class="text-3xl transform transition-transform duration-300 group-hover:translate-x-2">→</div>
+            </div>
 
         </div>
 
     </div>
-
-    <section class="relative min-h-screen overflow-hidden">
-
-        <img
-            src="image/bg-image.jpg"
-            alt="background"
-            class="absolute inset-0 w-full h-full object-cover"
-        >
-
-        <div class="absolute inset-0 bg-black/10"></div>
-
-        <div
-            class="absolute bottom-0 right-0
-                   w-full
-                   md:w-[720px]
-                   lg:w-[850px]">
-
-            <div
-                class="bg-white/95
-                       backdrop-blur-sm
-                       p-8 md:p-12 lg:p-14
-                       shadow-2xl
-                       transition duration-300
-                       hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
-
-                <h2
-                    class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-                    The rhythm of life
-                </h2>
-
-                <p
-                    class="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                    How regular repetition structures humans, society,
-                    and natural processes. The new issue of our digital
-                    magazine explores the rhythm behind everyday life.
-                </p>
-
-                <a
-                    href="#"
-                    class="inline-block mt-8 bg-green-700 text-white px-6 py-3 font-semibold transition duration-300 hover:bg-green-800">
-                    Read More
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-```html
-<section class="bg-[#f3f3f3]">
-
-    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3">
-
-        <div
-            class="bg-[#1f1f1f] text-white p-8 min-h-[290px] flex flex-col justify-between">
-
-            <div>
-
-                <div
-                    class="w-16 h-16 border border-white flex items-center justify-center mb-8">
-                    <span class="font-bold text-xl leading-none">
-                        NE<br>WS
-                    </span>
-                </div>
-
-                <h3 class="text-2xl font-semibold leading-relaxed">
-                    Signals from the deep: brain rhythms distinguish
-                    states of consciousness
-                </h3>
-
-            </div>
-
-            <span class="text-4xl">→</span>
-
-        </div>
-
-        <div
-            class="bg-white
-                   p-8
-                   min-h-[290px]
-                   border border-transparent
-                   transition-all
-                   duration-300
-                   hover:border-green-700
-                   hover:text-green-700
-                   hover:scale-105
-                   cursor-pointer">
-
-            <div
-                class="w-16 h-16 border border-black flex flex-col items-center justify-center mb-8">
-
-                <span class="font-bold text-2xl">10</span>
-                <span class="font-bold">JUN</span>
-
-            </div>
-
-            <h3 class="text-2xl font-semibold leading-relaxed">
-                Franz Schubert’s “Fair Maid of the Mill”
-                and it’s background in Berlin
-            </h3>
-
-            <div class="mt-8 text-4xl">
-                →
-            </div>
-
-        </div>
-
-        <div
-            class="bg-[#f3f3f3]
-                   p-8
-                   min-h-[290px]
-                   flex items-center">
-
-            <span
-                class="text-4xl text-green-700">
-                →
-            </span>
-
-        </div>
-
-        <div></div>
-
-        <div
-            class="bg-[#1f1f1f]
-                   text-white
-                   p-8
-                   min-h-[280px]
-                   flex flex-col justify-between">
-
-            <div>
-
-                <div
-                    class="w-16 h-16 border border-white flex items-center justify-center mb-8">
-
-                    <span class="font-bold text-xl leading-none">
-                        NE<br>WS
-                    </span>
-
-                </div>
-
-                <h3 class="text-2xl font-semibold leading-relaxed">
-                    Munich Climate School:
-                    Tackling the climate crisis through
-                    an interdisciplinary approach
-                </h3>
-
-            </div>
-
-            <span class="text-4xl">→</span>
-
-        </div>
-
-        <div
-            class="bg-green-700
-                   text-white
-                   p-8
-                   min-h-[280px]
-                   flex flex-col justify-between
-                   transition-all
-                   duration-300
-                   hover:bg-green-800">
-
-            <h3 class="text-2xl font-bold">
-                To the Newsroom
-            </h3>
-
-            <span class="text-4xl">
-                →
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
+</main>
 
 </body>
 </html>
-```
